@@ -1,0 +1,19 @@
+{
+  "name": "Tanvi Call Assistant",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Tanvi dashboard",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "cd dashboard && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
